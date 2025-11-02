@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.pnp.*
+*.log
+pnpm-lock.yaml
+yarn.lock
+
+# Build output
+dist/
+.astro/
+.cache/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Testing and coverage
+coverage/
+.nyc_output/
+reports/
