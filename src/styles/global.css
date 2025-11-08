@@ -1,1 +1,68 @@
 @import "tailwindcss";
+
+:root {
+    --brand-pink: #ff0066;
+    --brand-purple: #7137c8;
+    --brand-sky: #41b9e9;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  
+  /* .about-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 4rem;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      margin-top: 0;
+      padding-bottom: 0;
+  } */
+  
+  @utility text-brand-pink {
+    color: var(--brand-pink);
+  }
+  
+  @utility text-brand-purple {
+    color: var(--brand-purple);
+  }
+  
+  @utility text-brand-sky {
+    color: var(--brand-sky);
+  }
+  
+  @utility bg-brand-pink {
+    background: var(--brand-pink);
+  }
+  
+  @utility bg-brand-purple {
+    background: var(--brand-purple);
+  }
+  
+  @utility bg-brand-sky {
+    background: var(--brand-sky);
+  }
+  
+  @utility about-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 0.8;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+  
+    margin-top: 0;
+    padding-bottom: 0;
+  }
