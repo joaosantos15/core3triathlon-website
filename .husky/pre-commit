@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+set -e
+
+npm run build
+
+touch docs/.nojekyll
+git add docs/.nojekyll

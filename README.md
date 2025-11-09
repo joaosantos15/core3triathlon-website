@@ -1,5 +1,15 @@
 # Astro Starter Kit: Minimal
 
+## Git Hooks
+
+Husky keeps a shared pre-commit hook in sync for everyone. After installing dependencies the hook will automatically run `npm run build`, touch `docs/.nojekyll`, and stage the file.
+
+If hooks ever go missing (for example on CI or when `prepare` is skipped) run:
+
+```sh
+npm run prepare
+```
+
 ```sh
 npm create astro@latest -- --template minimal
 ```
