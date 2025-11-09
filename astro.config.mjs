@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/core3triathlon-website/', // github repo name
+  base: '', // github repo name
   outDir: './docs', // for github pages
   trailingSlash: 'ignore', 
   vite: {
