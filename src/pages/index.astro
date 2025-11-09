@@ -3,12 +3,15 @@ import '../styles/global.css'
 const currentYear = new Date().getFullYear()
 const registrationLink =
   'https://docs.google.com/forms/d/e/1FAIpQLScD5tNYRbCOPABrqfWttwa5-fqv6Mg5_gB7fgMULSqe4fwI4g/viewform'
-const instagramLink = "https://www.instagram.com/core3.triathlon?igsh=MndoZ3Z6NDdsaHJu"
+const instagramLink =
+  'https://www.instagram.com/core3.triathlon?igsh=MndoZ3Z6NDdsaHJu'
 const pageTitle = 'Core3 Triathlon Club'
 const pageDescription =
   'Core3 Triathlon Club helps athletes grow together through structured swim, bike, and run training with a supportive community.'
 const ogImagePath = '/images/og-preview.png'
-const ogImageUrl = Astro.site ? new URL(ogImagePath, Astro.site).toString() : ogImagePath
+const ogImageUrl = Astro.site
+  ? new URL(ogImagePath, Astro.site).toString()
+  : ogImagePath
 const ogImageAlt = 'Core3 Triathlon Club community training preview graphic'
 const pageUrl = Astro.url?.href ?? ''
 ---
@@ -122,11 +125,11 @@ const pageUrl = Astro.url?.href ?? ''
                 Train Together
               </p>
               <div
-                class="space-y-2 text-4xl font-extrabold uppercase tracking-[0.35em] sm:text-5xl"
+                class="space-y-2 text-4xl font-extrabold uppercase tracking-[0.35em] sm:text-5xl flex flex-col"
               >
-                <p><span class="text-brand-sky">~</span> Swim</p>
-                <p><span class="text-brand-pink">·</span> Bike</p>
-                <p><span class="text-brand-purple">–</span> Run</p>
+                <div class="flex"><p class=" w-10 text-brand-sky">~</p> <p>Swim</p></div>
+                <div class="flex"><p class=" w-10 text-brand-pink pl-[9px]">·</p> <p>Bike</p></div>
+                <div class="flex"><p class=" w-10 text-brand-purple">–</p> <p>Run</p></div>
               </div>
               <p class="max-w-md text-base leading-relaxed text-slate-200">
                 Master three disciplines, stay accountable, and discover how
