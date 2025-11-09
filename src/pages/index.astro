@@ -4,6 +4,13 @@ const currentYear = new Date().getFullYear()
 const registrationLink =
   'https://docs.google.com/forms/d/e/1FAIpQLScD5tNYRbCOPABrqfWttwa5-fqv6Mg5_gB7fgMULSqe4fwI4g/viewform'
 const instagramLink = "https://www.instagram.com/core3.triathlon?igsh=MndoZ3Z6NDdsaHJu"
+const pageTitle = 'Core3 Triathlon Club'
+const pageDescription =
+  'Core3 Triathlon Club helps athletes grow together through structured swim, bike, and run training with a supportive community.'
+const ogImagePath = '/images/og-preview.png'
+const ogImageUrl = Astro.site ? new URL(ogImagePath, Astro.site).toString() : ogImagePath
+const ogImageAlt = 'Core3 Triathlon Club community training preview graphic'
+const pageUrl = Astro.url?.href ?? ''
 ---
 
 <!doctype html>
@@ -12,7 +19,19 @@ const instagramLink = "https://www.instagram.com/core3.triathlon?igsh=MndoZ3Z6ND
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>Core3 Triathlon Club</title>
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:type" content="website" />
+    {pageUrl && <meta property="og:url" content={pageUrl} />}
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
