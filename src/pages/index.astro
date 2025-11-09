@@ -65,18 +65,18 @@ const pageUrl = Astro.url?.href ?? ''
         <div
           class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6"
         >
-          <a href="/" class="flex items-center gap-4">
+          <a href="/" class="flex items-center gap-2 sm:gap-4">
             <img
               src="/images/logo.png"
               alt="Core3 Triathlon Club logo"
-              class="h-12 w-auto"
+              class="h-10 w-auto sm:h-12"
             />
             <span
-              class="text-xl font-semibold uppercase sm:text-2xl"
-              style={{ fontFamily: 'Montserrat', fontSize: "3rem" }}>Core3</span
+              class="text-2xl font-semibold uppercase sm:text-3xl md:text-5xl"
+              style={{ fontFamily: 'Montserrat' }}>Core3</span
             >
             <span
-              class="text-xl font-semibold uppercase tracking-[0.3em] sm:text-2xl"
+              class="hidden font-semibold uppercase tracking-[0.3em] sm:inline sm:text-xl md:text-2xl"
               >Triathlon Club</span
             >
           </a>
@@ -144,10 +144,6 @@ const pageUrl = Astro.url?.href ?? ''
                   <p>Run</p>
                 </div>
               </div>
-              <p class="max-w-md text-base leading-relaxed text-slate-200">
-                Master three disciplines, stay accountable, and discover how
-                powerful a community of dedicated athletes can be.
-              </p>
             </div>
 
             <div
@@ -166,7 +162,7 @@ const pageUrl = Astro.url?.href ?? ''
               <p class="mt-6 text-base leading-relaxed text-slate-600">
                 Come for the sport, stay for the people. We’re here to make
                 triathlon approachable, structured, and fun for every
-                athlete—from your first brick to your next finish line.
+                athlete.
               </p>
             </div>
           </div>
@@ -188,16 +184,16 @@ const pageUrl = Astro.url?.href ?? ''
                 </h3>
                 <p class="text-base leading-relaxed text-slate-600">
                   It started with a few friends, none of us confident in the
-                  water, all of us curious about triathlon. We learned to swim
-                  one lane at a time, pushed each other through early morning
-                  rides, and crossed our first 70.3 finish line together. The
-                  real victory wasn’t the medal—it was the friendships built
-                  along the way.
+                  water, all of us curious about triathlon. With the goal in
+                  mind and one friend coaching us, we went from 50m crawling
+                  without drowning to completing our first Ironman 70.3
+                  altogether. However the biggest win wasn't crossing the finish
+                  line, but the friendships and memories that have been built
+                  while training and racing together.
                 </p>
                 <p class="text-base leading-relaxed text-slate-600">
-                  Core3 exists to share that experience: structured training,
-                  expert guidance, and a welcoming crew who make the hard work
-                  feel like play.
+                  With Core3, we want to offer the same to others: a space to
+                  get into triathlon, to train seriously and to have fun.
                 </p>
               </div>
 
@@ -222,19 +218,19 @@ const pageUrl = Astro.url?.href ?? ''
                     </span>
                   </li>
                   <li class="flex items-start gap-3">
-                    <span class="mt-2 h-2.5 w-2.5 rounded-full bg-brand-purple"
+                    <span class="mt-2 h-2.5 w-2.5 rounded-full bg-brand-pink"
                     ></span>
                     <span>
-                      <strong class="text-slate-900">Skill clinics:</strong> Technique
+                      <strong class="text-slate-900">Events:</strong> Technique
                       refinement, pacing strategy, and race simulations.
                     </span>
                   </li>
                   <li class="flex items-start gap-3">
-                    <span class="mt-2 h-2.5 w-2.5 rounded-full bg-brand-pink"
+                    <span class="mt-2 h-2.5 w-2.5 rounded-full bg-brand-purple"
                     ></span>
                     <span>
                       <strong class="text-slate-900">Community:</strong> Accountability,
-                      encouragement, and plenty of laughs along the way.
+                      encouragement, and fun along the way.
                     </span>
                   </li>
                 </ul>
@@ -269,13 +265,15 @@ const pageUrl = Astro.url?.href ?? ''
               Join Us Today
             </h2>
             <p class="max-w-2xl text-base leading-relaxed text-slate-200">
-              Whether you are chasing your first sprint or training for a full
-              distance, we’ll match your commitment with tailored sessions,
-              expert support, and a team that shows up for you.
+              Whether you're training for your first race or simply enjoy being
+              part of the journey, we're here with good vibes, real support,
+              and a community that has your back.
             </p>
             <div class="flex flex-col gap-4 sm:flex-row">
               <a
-                href="mailto:core3triathlon@gmail.com?subject=Request%20to%20Join%20Core3"
+                href={registrationLink}
+                target="blank"
+                rel="noopener"
                 class="inline-flex items-center justify-center rounded-full bg-brand-purple px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-lg transition hover:bg-brand-pink"
               >
                 Request to Join
@@ -379,7 +377,7 @@ const pageUrl = Astro.url?.href ?? ''
                       fill="currentColor"
                     >
                       <path
-                        d="M14.7 3 12 7.8 9.3 3H5l7 12.5L19 3h-4.3ZM15 14l-3 5.5L9 14H6l6 11 6-11h-3Z"
+                        d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"
                       ></path>
                     </svg>
                   </a>
