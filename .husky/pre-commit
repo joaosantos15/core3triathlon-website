@@ -3,8 +3,6 @@
 set -e
 
 npm run build
-
 touch docs/.nojekyll
 echo core3triathlon.ch > docs/CNAME
-git add docs/.nojekyll
-git add docs/CNAME
+git add -A
